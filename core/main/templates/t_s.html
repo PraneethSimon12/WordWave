@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordWave | A text to audio based platform</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 't_s.css' %}">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link href="{% static 'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' %}" rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'master.css' %}">
+</head>
+<body>
+    
+    <div class="header">
+        <a href="{% url 'home' %}" class="logo">WordWave</a>
+        <nav class="navbar">
+            <a href="{% url 'index' %}">Login</a>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'home' %}">Languages</a>
+            <a href="{% url 'text' %}">Image To Text</a>
+            <a href="{% url 't_s' %}">Text To Speech</a>
+        </nav>
+    </div>
+    <div class="hero">
+        <h1>Text To Speech <span>Converter</span></h1>
+        <textarea placeholder="Write anything here..."></textarea>
+        <div class="row">
+            <select></select>
+            <button><img src="{% static 'play.png' %}" alt="">Listen</button>
+        </div>
+    </div>
+    <script src="{% static "js/t_s.js" %}"></script>
+</body>
+</html>

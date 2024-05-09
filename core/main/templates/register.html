@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE Edge">
+    <title>WordWave | A text to audio based platform</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'register.css' %}">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel='stylesheet'>
+    
+</head>
+<body>
+<div class="header">
+    <a href="{% url 'home' %}" class="logo">WordWave</a>
+    <nav class="navbar">
+      <a href="{% url 'index' %}">Login</a>
+      <a href="{% url 'home' %}">Home</a>
+      <a href="{% url 'home' %}">Languages</a>
+      <a href="{% url 'text' %}">Image To Text</a>
+      <a href="{% url 't_s' %}">Text To Speech</a> 
+    </nav>
+</div>
+<div id="container" class="register-pg">
+    <div class="form-wrap">
+        <h1>Sign Up</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" name="firstname" id="first-name">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="lastname" id="last-name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="form-group">
+                <label for="cpass">Confirm Password</label>
+                <input type="password" name="confirm_password" id="confirm-password">
+            </div>
+            <button type="submit"><a href="{% url 'index' %}">Sign Up</a></button>
+            <p class="bottom-text">By Clicking the Sign Up Button, you agree to our <a href="#">Term & Conditions</a> and <a href="#">Privacy Policy</a></p>
+        </form>
+    </div>
+    <footer>
+        <p>Already Have an Account? <a href="{% url 'index' %}">Login Here</a></p>
+    </footer>
+</div>
+</body>
+</html>

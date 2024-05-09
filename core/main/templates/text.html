@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE Edge">
+    <title>WordWave | A text to audio based platform</title>
+   
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'text.css' %}">
+    <link href="{% static 'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' %}" rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'master.css' %}">
+</head>
+
+<body>
+<div class="header">
+    <a href="{% url 'home' %}" class="logo">WordWave</a>
+    <nav class="navbar">
+        <a href="{% url 'index' %}">Login</a>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'home' %}">Languages</a>
+        <a href="{% url 'text' %}">Image To Text</a>
+        <a href="{% url 't_s' %}">Text To Speech</a>
+    </nav>
+</div>
+
+<section class="hero1">
+    <div class="hero-container1">
+        <div class="column-left1">
+            <h1>Upload your image</h1>
+            <p>Make sure it's in .jpg or .png form.</p>
+            <a href="#"><button>Upload</button></a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
