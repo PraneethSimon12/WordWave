@@ -1,0 +1,71 @@
+body
+{
+   background:url(https://files.123freevectors.com/wp-content/original/148152-dark-blue-abstract-wave-background.jpg) no-repeat;
+   animation: fadeIn 5s;
+}
+
+body
+{
+   box-sizing: border-box;
+   margin:0;
+   padding:0;
+   color:white;
+   
+}
+
+
+.hero-container1
+{
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+   height:95vh;
+   padding: 3rem calc((100vw - 1300px)/2);
+   animation: fadeIn 5s;
+   
+}
+.column-left1
+{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   color:#ffff;
+   padding:0 2rem;
+}
+
+.column-left1 h1
+{
+   margin-bottom: 1rem;
+   font-size: 3rem;
+
+}
+.column-left1 p
+{
+   margin-bottom: 2rem;
+   font-size: 1.5rem;
+   line-height: 0;
+
+}
+
+button
+{
+   padding:1rem 3rem;
+   font-size: 1rem;
+   border:none;
+   color:#033b8f;
+   background:#ffff;
+   cursor:pointer;
+   border-radius:35px;
+   animation: fadeIn 5s;
+}
+
+button:hover
+{
+   background:#ffff;
+   color:#033b8f;
+}
+
+@keyframes fadeIn {
+   0% { opacity: 0; }
+   100% { opacity: 1; }
+ }

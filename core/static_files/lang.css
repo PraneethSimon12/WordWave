@@ -1,0 +1,207 @@
+body
+{
+    animation: fadeIn 3s;
+    animation-fill-mode: forwards;
+    background:url(https://getwallpapers.com/wallpaper/full/e/1/1/951176-dark-blue-background-wallpaper-2560x1600-smartphone.jpg) no-repeat;
+}
+
+.flags
+{
+    animation: fadeIn 5s;
+   
+    display:flex;
+    
+
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+  .dropdown{
+
+    display: inline-block;
+
+}
+
+.dropdown button{
+
+    background-color: hsl(0, 0%, 80%);
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.dropdown a{
+
+    display: block;
+
+    color: black;
+
+    text-decoration: none;
+
+    padding: 10px 15px;
+
+}
+
+.dropdown .content{
+
+    display: none;
+
+    position: absolute;
+
+    background-color: hsl(0, 0%, 95%);
+
+    min-width: 100px;
+
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+
+}
+
+.dropdown:hover .content{
+
+    display: block;
+
+}
+
+.dropdown:hover button{
+
+    background-color: hsl(0, 0%, 70%);
+
+}
+
+.dropdown a:hover{
+
+    background-color: hsl(0, 0%, 90%);
+
+}
+
+.dropdown h1
+{
+    color:white;
+}
+
+
+
+
+
+.dropdown .content1{
+
+    display: none;
+
+    position: absolute;
+
+    background-color: hsl(0, 0%, 95%);
+
+    min-width: 100px;
+
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+
+}
+
+.dropdown:hover .content1{
+
+    display: block;
+
+}
+
+ .dropdown{
+
+    display: inline-block;
+
+}
+
+.dropdown button{
+
+    background-color: hsl(0, 0%, 80%);
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.dropdown a{
+
+    display: block;
+
+    color: black;
+
+    text-decoration: none;
+
+    padding: 10px 15px;
+
+}
+
+.dropdown .content{
+
+    display: none;
+
+    position: absolute;
+
+    background-color: hsl(0, 0%, 95%);
+
+    min-width: 100px;
+
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+
+}
+
+.dropdown:hover .content{
+
+    display: block;
+
+}
+
+.dropdown:hover button{
+
+    background-color: hsl(0, 0%, 70%);
+
+}
+
+.dropdown a:hover{
+
+    background-color: hsl(0, 0%, 90%);
+
+}
+
+.dropdown h1
+{
+    color:white;
+}
+
+
+
+
+
+.dropdown .content1{
+
+    display: none;
+
+    position: absolute;
+
+    background-color: hsl(0, 0%, 95%);
+
+    min-width: 100px;
+
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+
+}
+
+.dropdown:hover .content1{
+
+    display: block;
+
+}
+
