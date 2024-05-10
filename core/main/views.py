@@ -40,12 +40,6 @@ def text_page(request):
     return render(request, "text.html")
 
 
-
-
-
-
-
-
 def index_page(request):
     if request.method == 'POST':
         username = request.POST.get('username')
