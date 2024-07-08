@@ -78,18 +78,18 @@ def register_page(request):
     else:
         return render(request, 'register.html')
 
-@login_required(login_url="/index/")
+#@login_required(login_url="/index/")
 def home_page(request):
     return render(request,'home.html')
 
-@login_required(login_url="/index/")
+#@login_required(login_url="/index/")
 def language_page(request):
     return render(request,'languages.html')
 
-@login_required(login_url="/index/")
+#@login_required(login_url="/index/")
 def text_page(request):
     return render(request,'text.html')
 
-@login_required(login_url="/index/")
+#@login_required(login_url="/index/")
 def t_s(request):
     return render(request,'t_s.html')
